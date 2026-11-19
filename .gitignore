@@ -1,0 +1,41 @@
+# ==================== IDE 与系统缓存 ====================
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+
+# ==================== Python 缓存 ====================
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.ipynb_checkpoints/
+
+# ==================== 模型权重与大体积预训练文件 ====================
+*.pth
+*.pt
+*.ckpt
+*.onnx
+*.pkl
+*.bin
+*.safetensors
+molformer_local/
+runs/
+weights/
+checkpoints/
+student_kd_out*/
+
+# ==================== 日志与临时文件 ====================
+*.log
+nohup.out
+*.tmp
+*.bak
+
+# ==================== 大型数据与结果文件 ====================
+*.csv
+!demo_data/*.csv
+*.sdf
+*.mol2
+*.pdb
+dataset_color_mapping.json
