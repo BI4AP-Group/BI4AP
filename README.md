@@ -31,7 +31,7 @@ BI4AP/
 │   │       ├── images/             # Training and validation images
 │   │       └── labels/             # Bounding box annotations (.txt)
 │   ├── train.py                    # Train YOLOv8 interaction detector
-│   └── predict_chat.py             # Batch inference & interaction feature extraction
+│   └── predict.py                  # Batch inference & interaction feature extraction
 ├── 02_teacher_training/            # Stage 2: Multimodal Teacher training & inference
 │   ├── acid.xlsx                   # Amino acid physicochemical descriptor table
 │   ├── mode.py                     # Multimodal Teacher model training & ablation
@@ -39,6 +39,7 @@ BI4AP/
 ├── 03_student_distillation/        # Stage 3: 1D Student distillation & screening
 │   ├── student_train.py            # Knowledge distillation training for 1D Student
 │   └── predict.py                  # High-throughput virtual screening via Student model
+├── demo_data/                      # Minimal toy datasets for quick testing & format reference
 ├── requirements.txt                # Core Python dependencies
 ├── .gitignore                      # Excluded cache, logs, and large weight files
 ├── LICENSE                         # MIT License
@@ -128,6 +129,8 @@ python predict.py
 ```
 
 > **Note:** Please review the configurable input/output file paths at the top of each script before execution to match your local dataset location.
+>
+> **Note on `demo_data/`:** The files in `demo_data/` serve solely as minimal placeholder datasets for input format reference and end-to-end pipeline verification. While filenames and ID indices are strictly aligned for code execution, the 2D interaction images and binding affinity values (`merger_aff`) are chemically decoupled dummy pairings. Therefore, numerical predictions generated on `demo_data/` carry no chemical significance and do not reflect the model performance reported in the manuscript.
 
 ## License
 

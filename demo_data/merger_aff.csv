@@ -1,0 +1,4 @@
+Filename,SMILES,Affinity
+1.png,S(=O)(=O)(Oc1ccc(CCOc2ccc(C[C@](OCC)C(=O)O)cc2)cc1)C,-5.8909626
+2.png,O=C(O[C@@]1[C@@](c2cc(O)c(O)c(O)c2)Oc2c(c(O)cc(O)c2)C1)c1cc(O)c(O)c(O)c1,-5.3020802
+3.png,O=C(O)Cc1ccc(N2C[C@@](N[C@](C)c3c4c(ccc3)cccc4)CC2)cc1,-4.6704249
